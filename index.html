@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        background-color: #282822;
+      }
+
+      html,
+      body,
+      .editor {
+        height: 100%;
+      }
+
+      .editor {
+        margin-top: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="editor" class="editor">// https://coders.tokyo</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/mode-javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/mode-markdown.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/theme-monokai.js"></script>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+    <script>
+      var editor = ace.edit('editor');
+      editor.setTheme('ace/theme/monokai');
+      var JavaScriptMode = ace.require('ace/mode/markdown').Mode;
+      editor.session.setMode(new JavaScriptMode());
+      editor.session.setOptions({
+        tabSize: 2,
+        useSoftTabs: true
+      });
+    </script>
+  </body>
+</html>
