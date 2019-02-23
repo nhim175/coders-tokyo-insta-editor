@@ -14,6 +14,6 @@
   "author": "Coders.Tokyo",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^2.0.0"
+    "electron": "^2.0.17"
   }
 }
