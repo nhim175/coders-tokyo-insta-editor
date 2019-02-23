@@ -1,20 +1,17 @@
 {
-  "name": "electron-quick-start",
+  "name": "coders-tokyo-code-editor",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "This is a 420x420 code editor for Instagram posts.",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/nhim175/coders-tokyo-insta-editor",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "code editor"
   ],
-  "author": "GitHub",
+  "author": "Coders.Tokyo",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^2.0.0"
